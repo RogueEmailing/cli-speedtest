@@ -1,0 +1,3 @@
+#/bin/sh
+echo "alias speedtest='mkdir -p $shareDir/speedtest && curl https://raw.githubusercontent.com/RogueEmailing/cli-s>' | python - --share --secure" >> ~/.bashrc && source ~/.bashrc
+speedtest
