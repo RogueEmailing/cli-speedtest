@@ -1985,6 +1985,7 @@ def shell():
                  args.units[0],
                  (results.upload / 1000.0 / 1000.0) / args.units[1],
                  args.units[0]))
+        print('Please go to the website to see the server used!')
     elif args.csv:
         printer(results.csv(delimiter=args.csv_delimiter))
     elif args.json:
