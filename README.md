@@ -12,6 +12,7 @@ Next you will need to type these commands:
 ```bash
 sudo source ~/.bashrc
 ```
+Now to run the speedtest whenever you need, you just type:
 ```bash
 sudo speedtest
 ```
