@@ -1714,7 +1714,7 @@ def parse_args():
         'speedtest.net.\n'
         '------------------------------------------------------------'
         '--------------\n'
-        'https://github.com/RogueEmailing/cli-speedtest/tree/main')
+        'https://github.com/RogueEmailing/cli-speedtest/')
 
     parser = ArgParser(description=description)
     # Give optparse.OptionParser an `add_argument` method for
@@ -1985,7 +1985,6 @@ def shell():
                  args.units[0],
                  (results.upload / 1000.0 / 1000.0) / args.units[1],
                  args.units[0]))
-        print('Please go to the website to see the server used!')
     elif args.csv:
         printer(results.csv(delimiter=args.csv_delimiter))
     elif args.json:
