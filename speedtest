@@ -1714,7 +1714,7 @@ def parse_args():
         'speedtest.net.\n'
         '------------------------------------------------------------'
         '--------------\n'
-        'https://github.com/sivel/speedtest-cli')
+        '')
 
     parser = ArgParser(description=description)
     # Give optparse.OptionParser an `add_argument` method for
@@ -1980,7 +1980,7 @@ def shell():
 
     if args.simple:
         printer('Server used: %(sponsor)s (%(name)s) [%(d)0.2f km]\nPing: %s ms\nDownload: %0.2f M%s/s\nUpload: %0.2f M%s/s' %
-                (results.sponsor, results.ping,
+                (results.server, results.ping,
                  (results.download / 1000.0 / 1000.0) / args.units[1],
                  args.units[0],
                  (results.upload / 1000.0 / 1000.0) / args.units[1],
