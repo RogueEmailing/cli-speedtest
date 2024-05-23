@@ -6,7 +6,7 @@ sudo nano ~/.bashrc
 ```
 Then at the end of the file, enter the following line:
 ```
-alias speedtest="sudo mkdir -p /share/speedtest && sudo curl https://raw.githubusercontent.com/RogueEmailing/cli-speedtest/main/speedtest | sudo python - --share --secure | sudo dd -of =/share/speedtest/result & echo You can view the result in this file: /share/speedtest/result"
+alias speedtest="sudo mkdir -p /share/speedtest && sudo curl https://raw.githubusercontent.com/RogueEmailing/cli-speedtest/main/speedtest | sudo python - --share --secure | sudo dd -of =/share/speedtest/result && echo You can view the result in this file: /share/speedtest/result"
 ```
 Next you will need to type these commands:
 ```bash
